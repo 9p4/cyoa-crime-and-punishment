@@ -1,0 +1,32 @@
+[package]
+name = "cyoa-CaP"
+version = "0.1.0"
+authors = ["Sambhav Saggi <17993169+sambhavsaggi@users.noreply.github.com>"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+wasm-bindgen = { version = "0.2" }
+cyoa = { version = "0.1", path = "../cyoa-rs.git" }
+console_error_panic_hook = { version = "0.1.6"}
+wee_alloc = { version = "0.4.5", optional = true }
+js-sys = "0.3"
+
+[dev-dependencies]
+wasm-bindgen-test = "0.3.13"
+
+[profile.release]
+# Tell `rustc` to optimize for small code size.
+opt-level = "s"
+
+[dependencies.web-sys]
+version = "0.3"
+features = [
+  'Document',
+  'Element',
+  'HtmlElement',
+  'Node',
+  'Window',
+]

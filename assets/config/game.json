@@ -1,0 +1,25 @@
+{
+  "name": "Example CYOA Game",
+  "author": "Sambhav Saggi",
+  "slug": "An example game for testing and showcasing.",
+  "paths": {
+    "0": {
+      "text": "The `0` path is where the game always starts. Easy enough, right?",
+      "options": [
+        {
+          "jump": 1,
+          "text": "go to the next page"
+        }
+      ]
+    },
+    "1": {
+      "text": "Another path! How nice.",
+      "options": [
+        {
+          "jump": 0,
+          "text": "go back to the other page, I guess"
+        }
+      ]
+    }
+  }
+}
