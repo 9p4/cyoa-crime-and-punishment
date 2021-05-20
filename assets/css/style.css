@@ -1,9 +1,3 @@
-.term {
-  width: 100%;
-  height: 90%;
-}
-
-.input {
-  width: 100%;
-  height: 7%;
+body {
+    background-color: #000;
 }
