@@ -101,6 +101,26 @@ pub fn option_get_jump(option: &JsValue) -> JsValue {
 }
 
 #[wasm_bindgen]
+pub fn get_path_len(config: &JsValue) -> JsValue {
+    let state: cyoa::State = config.into_serde().unwrap();
+    JsValue::from_f64(state.config.get_path_len() as f64)
+}
+
+#[wasm_bindgen]
+pub fn export_history(config: &JsValue) -> JsValue {
+    let state: cyoa::State = config.into_serde().unwrap();
+    JsValue::from_str(state.export_save().as_str())
+}
+
+#[wasm_bindgen]
+pub fn import_history(config: &JsValue, history_v: &JsValue) -> JsValue {
+    let mut state: cyoa::State = config.into_serde().unwrap();
+    let history = history_v.as_string().unwrap();
+    state.import_save(&history);
+    JsValue::from_serde(&state).unwrap()
+}
+
+#[wasm_bindgen]
 pub fn init_panic_hook() {
     console_error_panic_hook::set_once();
 }

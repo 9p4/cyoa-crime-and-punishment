@@ -6,9 +6,10 @@
 // don't support natively imported WebAssembly as an ES module, but
 // eventually the manual initialization won't be required!
 import init,
-{check_path, get_author, get_name, get_path, get_path_id, get_slug, jump,
- load_game, option_get_jump, option_get_text, path_get_option,
- path_get_option_len, path_get_text} from '/pkg/cyoa_CaP.js';
+{check_path, export_history, get_author, get_name, get_path, get_path_id,
+ get_path_len, get_slug, import_history, jump, load_game, option_get_jump,
+ option_get_text, path_get_option, path_get_option_len,
+ path_get_text} from '/pkg/cyoa_crime_and_punishment.js';
 
 function loadJSON(callback) {
   var xobj = new XMLHttpRequest();
@@ -33,6 +34,8 @@ h/H/?: Shows this message
 q/Q: Quits
 p/P: Reprint the last message
 g/G: Go to page (ie g 1)
+s/S: Save the game into a string
+i/I: Import a game from a string
 `;
 
 var game;
@@ -52,7 +55,7 @@ async function run() {
     term.remove_line(-1);
     term.echo(get_name(game));
     term.echo(get_slug(game));
-    term.echo("Made by " + get_author(game) + "\n");
+    term.echo(get_author(game) + "\n");
     print_path();
   });
 }
@@ -76,18 +79,27 @@ function parse_command(command) {
     var page = parseInt(command.args[0]);
     if ((page != null) && (isNumeric(page))) {
       page = parseInt(page);
-      if ((page >= 0)) {
+      let length = get_path_len(game);
+      if ((page >= 0) && (page < length)) {
         game = jump(game, parseInt(page));
+        print_path();
       } else {
-        term.echo(
-            "Enter a valid value (0-however-long-this-is-but-it-will-crash-if-the-number-doesnt-exist)");
+        term.echo("Enter a valid value (0-" + (length - 1) + ")");
       }
-      print_path();
     } else {
       term.echo("Enter a number after `g`");
     }
   } else if (lower.startsWith("p")) {
     print_path();
+  } else if (lower.startsWith("s")) {
+    term.echo(export_history(game));
+  } else if (lower.startsWith("i")) {
+    var history = parseInt(command.args[0]);
+    if (history != null) {
+      game = import_history(history);
+    } else {
+      term.echo("Enter a valid value (0-" + (length - 1) + ")");
+    }
   } else {
     term.echo("Not an option. Try ? for help.");
   }
