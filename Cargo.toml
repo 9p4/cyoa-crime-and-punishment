@@ -3,14 +3,16 @@ name = "cyoa-CaP"
 version = "0.1.0"
 authors = ["Sambhav Saggi <17993169+sambhavsaggi@users.noreply.github.com>"]
 edition = "2018"
+license-file = "LICENSE"
+repository = "https://github.com/sambhavsaggi/cyoa-CaP"
 
 [lib]
 crate-type = ["cdylib", "rlib"]
 
 [dependencies]
-wasm-bindgen = { version = "0.2" }
-cyoa = { version = "0.1", path = "../cyoa-rs.git" }
-console_error_panic_hook = { version = "0.1.6"}
+wasm-bindgen = "0.2"
+cyoa = "0.1"
+console_error_panic_hook = "0.1.6"
 wee_alloc = { version = "0.4.5", optional = true }
 js-sys = "0.3"
 
