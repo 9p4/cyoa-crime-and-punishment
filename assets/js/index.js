@@ -9,12 +9,12 @@ import init,
 {check_path, export_history, get_author, get_name, get_path, get_path_id,
  get_path_len, get_slug, import_history, jump, load_game, option_get_jump,
  option_get_text, path_get_option, path_get_option_len,
- path_get_text} from '/pkg/cyoa_crime_and_punishment.js';
+ path_get_text} from '../pkg/cyoa_crime_and_punishment.js';
 
 function loadJSON(callback) {
   var xobj = new XMLHttpRequest();
   xobj.overrideMimeType("application/json");
-  xobj.open('GET', '/assets/config/game.json',
+  xobj.open('GET', './assets/config/game.json',
             true); // Replace 'appDataServices' with the path to your file
   xobj.onreadystatechange = function() {
     if (xobj.readyState == 4 && xobj.status == "200") {
