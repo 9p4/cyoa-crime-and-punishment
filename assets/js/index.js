@@ -53,9 +53,9 @@ async function run() {
     game = load_game(response);
     document.title = get_name(game);
     term.remove_line(-1);
-    term.echo(get_name(game));
-    term.echo(get_slug(game));
-    term.echo(get_author(game) + "\n");
+    term.echo(get_name(game), {keepWords:true});
+    term.echo(get_slug(game), {keepWords:true});
+    term.echo(get_author(game) + "\n", {keepWords:true});
     print_path();
   });
 }
@@ -63,13 +63,13 @@ async function run() {
 function parse_command(command) {
   var lower = command.name.toLowerCase();
   if (lower.startsWith("h") || lower.startsWith("?")) {
-    term.echo(helpstr);
+    term.echo(helpstr, {keepWords:true});
   } else if (lower.startsWith("q")) {
-    term.echo("Just close the tab lol");
+    term.echo("Just close the tab lol", {keepWords:true});
   } else if (isNumeric(lower)) {
     var selection = parseInt(lower) - 1;
     if ((selection < 0) || (selection >= path_get_option_len(get_path(game)))) {
-      term.echo("Pick a proper number please");
+      term.echo("Pick a proper number please", {keepWords:true});
     } else {
       var jump_to = option_get_jump(path_get_option(get_path(game), selection));
       game = jump(game, parseInt(lower));
@@ -84,35 +84,35 @@ function parse_command(command) {
         game = jump(game, parseInt(page));
         print_path();
       } else {
-        term.echo("Enter a valid value (0-" + (length - 1) + ")");
+        term.echo("Enter a valid value (0-" + (length - 1) + ")", {keepWords:true});
       }
     } else {
-      term.echo("Enter a number after `g`");
+      term.echo("Enter a number after `g`", {keepWords:true});
     }
   } else if (lower.startsWith("p")) {
     print_path();
   } else if (lower.startsWith("s")) {
-    term.echo(export_history(game));
+    term.echo(export_history(game), {keepWords:true});
   } else if (lower.startsWith("i")) {
     var history = parseInt(command.args[0]);
     if (history != null) {
       game = import_history(history);
     } else {
-      term.echo("Enter a valid value (0-" + (length - 1) + ")");
+      term.echo("Enter a valid value (0-" + (length - 1) + ")", {keepWords:true});
     }
   } else {
-    term.echo("Not an option. Try ? for help.");
+    term.echo("Not an option. Try ? for help.", {keepWords:true});
   }
 }
 
 function print_path() {
   var current_path = get_path(game);
-  term.echo("Page " + get_path_id(game) + ": " + path_get_text(current_path));
+  term.echo("Page " + get_path_id(game) + ": " + path_get_text(current_path), {keepWords:true});
   term.echo("\nOptions:");
   for (var n = 0; n < path_get_option_len(current_path); n++) {
     term.echo((n + 1) + ": " + path_get_option(current_path, n).text);
   }
-  term.echo("What do you do?")
+  term.echo("What do you do?", {keepWords:true})
 }
 
 run();
