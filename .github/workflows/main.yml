@@ -39,11 +39,11 @@ jobs:
       - name: structure
         run: mkdir build
       - name: assets
-        run: cp assets build/
+        run: cp -r assets build/
       - name: index
         run: cp index.html build/
       - name: cleanup
-        run: rm assets/pkg/{.gitignore,LICENSE,package.json,README.md}
+        run: rm -f assets/pkg/{.gitignore,LICENSE,package.json,README.md}
         
       
       - name: deploy
