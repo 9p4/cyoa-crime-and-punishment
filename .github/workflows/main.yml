@@ -34,3 +34,21 @@ jobs:
           command: build
           # Toolchain to use (without the `+` sign, ex. `nightly`)
           toolchain: stable
+          args: "--release"
+        
+      - name: structure
+        run: mkdir build
+      - name: assets
+        run: cp assets build/
+      - name: index
+        run: cp index.html build/
+      - name: cleanup
+        run: rm assets/pkg/{.gitignore,LICENSE,package.json,README.md}
+        
+      
+      - name: deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.3
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: build # The folder the action should deploy.
+    
