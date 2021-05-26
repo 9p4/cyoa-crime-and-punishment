@@ -62,7 +62,7 @@ async function run() {
     term.remove_line(-1);
     term.echo(get_name(game), {keepWords : true});
     term.echo(get_slug(game), {keepWords : true});
-    term.echo(get_author(game) + "\n", {keepWords : true});
+    term.echo(get_author(game), {keepWords : true});
     print_path();
   });
 }
@@ -122,13 +122,12 @@ function parse_command(command) {
 
 function print_path() {
   var current_path = get_path(game);
-  term.echo("Page " + get_path_id(game));
+  term.echo("\n---\n\nPage " + get_path_id(game));
   term.echo(path_get_text(current_path), {keepWords : true});
   term.echo("\nOptions:");
   for (var n = 0; n < path_get_option_len(current_path); n++) {
     term.echo((n + 1) + ": " + path_get_option(current_path, n).text);
   }
-  // term.echo("What do you do?", {keepWords:true})
 }
 
 run();
