@@ -1,0 +1,29 @@
+{
+  "name": "Crime and Punishment",
+  "author": "Made with ❤️ by Sambhav Saggi using CYOA-rs https://github.com/sambhavsaggi/cyoa-rs",
+  "slug": "What would you do if you were Raskolnikov?",
+  "paths": {
+    "0": {
+      "text": "On an exceptionally hot evening early in July, you come out of the garret in which you lodge in S. Place and walk slowly, as though in hesitation, toward K. bridge.\nYou have successfully avoided meeting your landlady on the staircase. Your garret is under the roof of a high, five-storied house and is more like a cupboard than a room. The landlady who provides you with garret, dinners, and attendance, lives on the floor below, and every time you go out you are obliged to pass her kitchen, the door of which invariably stood open. And each time you pass, you have a sick, frightened feeling, which makes you scowl and feel ashamed. You are hopelessly in debt to your landlady, and are afraid of meeting her.",
+      "options": [
+        {
+          "jump": 1,
+          "text": "Continue"
+        }
+      ]
+    },
+    "1": {
+      "text": "Another path! How nice.",
+      "options": [
+        {
+          "jump": 0,
+          "text": "go back to the other page, I guess"
+        },
+        {
+          "jump": 1,
+          "text": "stay on this page"
+        }
+      ]
+    }
+  }
+}
