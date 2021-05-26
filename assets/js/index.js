@@ -29,13 +29,20 @@ function loadJSON(callback) {
 function sleep(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }
 function isNumeric(num) { return !isNaN(num) }
 
-const helpstr = `Help:
+const helpstr = `How To:
+When confronted with an option, press the number that you want to select. Or, use a command.
+
+Commands:
 h/H/?: Shows this message
 q/Q: Quits
 p/P: Reprint the last message
 g/G: Go to page (ie g 1)
 s/S: Save the game into a string
 i/I: Import a game from a string
+
+Tips and Tricks:
+Control + l: Clear
+Enter with one option: autoselect option
 `;
 
 var game;
@@ -71,7 +78,11 @@ function parse_command(command) {
     if ((selection < 0) || (selection >= path_get_option_len(get_path(game)))) {
       term.echo("Pick a proper number please", {keepWords : true});
     } else if (isNaN(selection)) {
-      // Do nothing
+      if (path_get_option_len(get_path(game)) == 1) {
+        var jump_to = option_get_jump(path_get_option(get_path(game), 0));
+        game = jump(game, jump_to);
+        print_path();
+      }
     } else {
       var jump_to = option_get_jump(path_get_option(get_path(game), selection));
       game = jump(game, jump_to);
