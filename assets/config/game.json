@@ -1,27 +1,104 @@
 {
-  "name": "Crime and Punishment",
-  "author": "Made with ❤️ by Sambhav Saggi using CYOA-rs https://github.com/sambhavsaggi/cyoa-rs",
+  "name": "Crime and Punishment: Inside the Mind of a Madman",
+  "author": "Made with ❤️ by Sambhav Saggi using [[!;;;;https://github.com/sambhavsaggi/cyoa-rs]CYOA-rs]. [[!;;;;https://github.com/sambhavsaggi/cyoa-crime-and-punishment]Visit game repo].\nArt by D. Shmarinov.",
   "slug": "What would you do if you were Raskolnikov?",
   "paths": {
     "0": {
-      "text": "On an exceptionally hot evening early in July, you come out of the garret in which you lodge in S. Place and walk slowly, as though in hesitation, toward K. bridge.\nYou have successfully avoided meeting your landlady on the staircase. Your garret is under the roof of a high, five-storied house and is more like a cupboard than a room. The landlady who provides you with garret, dinners, and attendance, lives on the floor below, and every time you go out you are obliged to pass her kitchen, the door of which invariably stood open. And each time you pass, you have a sick, frightened feeling, which makes you scowl and feel ashamed. You are hopelessly in debt to your landlady, and are afraid of meeting her.",
+      "text": "On an exceptionally hot evening early in July, you come out of the garret in which you lodge in S. Place and walk slowly, as though in hesitation, toward K. bridge.\nYou have successfully avoided meeting your landlady on the staircase. Your garret is under the roof of a high, five-storied house and is more like a cupboard than a room. The landlady who provides you with garret, dinners, and attendance, lives on the floor below, and every time you go out you are obliged to pass her kitchen, the door of which invariably stood open. And each time you pass, you have a sick, frightened feeling, which makes you scowl and feel ashamed. You are hopelessly in debt to your landlady, and are afraid of meeting her.\n\n[[@;;;;./assets/img/0.jpg]]",
       "options": [
         {
           "jump": 1,
-          "text": "Continue"
+          "text": "Press enter to continue"
         }
       ]
     },
     "1": {
-      "text": "Another path! How nice.",
+      "text": "For some time you have been in an overstrained, irritable condition. You're completely absorbed in yourself and isolated from your fellows (which you dread meeting).\nYou're absolutely crushed by poverty, and you've given up with anything of importance.",
       "options": [
         {
-          "jump": 0,
-          "text": "go back to the other page, I guess"
-        },
+          "jump": 2,
+          "text": "Press ëňtęr to continue"
+        }
+      ]
+    },
+    "2": {
+      "text": "\"I want to attempt a thing like [[i;white;]that] and am frightened by these trifles. Hm... yes, all is in a man's hands and he lets it all slip from cowardice, that's an axiom. It would be interesting to know what it is men are most afraid of. Taking a new step, uttering a new word is what they fear most.... But I am talking too much. It's because I chatter that I do nothing. Or perhaps it is that I chatter because I do nothing. I've learned to chatter this last month, lying for days together in my den thinking... of Jack the Giant-killer. Why am I going there now? Am I capable of [[i;white;]that]? Is [[i;white;]that] serious? It is not serious at all. It's simply a fantasy to amuse myself; a plaything! Yes, maybe it is a plaything.\"",
+      "options": [
         {
-          "jump": 1,
-          "text": "stay on this page"
+          "jump": 3,
+          "text": "Delve further into madness"
+        }
+      ]
+    },
+    "3": {
+      "text": "The noises of Petersburg grate on your already-overwrought nerves.",
+      "options": [
+        {
+          "jump": 4,
+          "text": "[[;white;]Make it stop]"
+        }
+      ]
+    },
+    "4": {
+      "text": "You mutter to yourself out of pure habit. Are your ideas a tangle? Does what you're thinking make sense? Feeling weak yet?",
+      "options": [
+        {
+          "jump": 5,
+          "text": "[[;red;]I'm so hungry]"
+        }
+      ]
+    },
+    "5": {
+      "text": "You hear someone say something, breaking you out of the stupor.\n\"Hey there, German hatter!\"\nHorror overcomes you.",
+      "options": [
+        {
+          "jump": 6,
+          "text": "Press enter to continue"
+        }
+      ]
+    },
+    "6": {
+      "text": "\"I knew it. I thought so! That's the worst of all! Why, a stupid thing like this, the most trivial detail might spoil the whole plan. Yes, my hat is too noticeable.... It looks absurd and that makes it noticeable.... With my rags I ought to wear a cap, any sort of old pancake, but not this grotesque thing. Nobody wears such a hat, it would be noticed a mile off, it would be remembered.... What matters is that people would remember it, and that would give them a clue. For this business one should be as little conspicuous as possible.... Trifles, trifles are what matter! Why, it's just such trifles that always ruin everything....\"",
+      "options": [
+        {
+          "jump": 7,
+          "text": "Press enter to continue"
+        }
+      ]
+    },
+    "7": {
+      "text": "You go up to a large house  which on one side looked on to the canal, and on the other into the street. There is a continual coming and going through the two gates and in the two courtyards of the house. You proceed inside and climb up the familiar black staircase. You reach the fourth floor.",
+      "options": [
+        {
+          "jump": 8,
+          "text": "Ring the bell of the only occupied flat"
+        }
+      ]
+    },
+    "8": {
+      "text": "You ring the bell of the old woman's flat. The bell gives a faint tinkle as though it were made of tin and not of copper. The little flats in such houses always have bells that ring like that. You had forgotten the note of that bell, and now its peculiar tinkle seems to remind you of something and to bring it clearly before him.\n\nIn a little while, the door opens a tiny crack: the old woman eyes her visitor with evident distrust through the crack, and nothing could be seen but her little eyes, glittering in the darkness. But, seeing a number of people on the landing, she grew bolder, and opens the door wide.\n\n[[@;;;;./assets/img/8.jpg]]",
+      "options": [
+        {
+          "jump": 9,
+          "text": "Enter the flat"
+        }
+      ]
+    },
+    "9": {
+      "text": "The old woman is a diminutive, withered up old woman of sixty, with sharp malignant eyes and a sharp little nose. Her colourless, somewhat grizzled hair is thickly smeared with oil, and she wears no kerchief over it. Round her thin long neck, which looks like a hen's leg, is knotted some sort of flannel rag, and, in spite of the heat, there hangs flapping on her shoulders, a mangy fur cape, yellow with age.",
+      "options": [
+        {
+          "jump": 10,
+          "text": "Remember your manners"
+        }
+      ]
+    },
+    "10": {
+      "text": "\"Raskolnikov, a student, I came here a month ago,\" the you make haste to mutter, with a half bow, remembering that you ought to be more polite. \"I remember, my good sir, I remember quite well your coming here,\" the old woman said distinctly, still keeping her inquiring eyes on his face.\n\"And here... I am again on the same errand\". The old woman paused, as though hesitating; then stepped on one side, and pointing to the door of the room, she said, letting her visitor pass in front of her.",
+      "options": [
+        {
+          "jump": 7,
+          "text": "Press enter to continue"
         }
       ]
     }
