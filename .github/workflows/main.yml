@@ -25,16 +25,17 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       
-      - run: mkdir build
-      - run: cp -r assets build/
-      - run: cp index.html build/
+      - run: mkdir -v build
+      - run: cp -v -r assets build/
+      - run: cp -v index.html build/
+      - run: cp -v favicon.ico build/
 
       - name: wasm-pack
         run: curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
         
       - run: wasm-pack build --target web -d build/assets/pkg --no-typescript
         
-      - run: rm build/assets/pkg/{.gitignore,LICENSE,package.json,README.md}
+      - run: rm -v build/assets/pkg/{.gitignore,LICENSE,package.json,README.md}
       
       - name: deploy
         uses: JamesIves/github-pages-deploy-action@4.1.3
