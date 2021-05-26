@@ -72,7 +72,7 @@ function parse_command(command) {
       term.echo("Pick a proper number please", {keepWords:true});
     } else {
       var jump_to = option_get_jump(path_get_option(get_path(game), selection));
-      game = jump(game, parseInt(lower));
+      game = jump(game, jump_to);
       print_path();
     }
   } else if (lower.startsWith("g")) {
@@ -107,12 +107,13 @@ function parse_command(command) {
 
 function print_path() {
   var current_path = get_path(game);
-  term.echo("Page " + get_path_id(game) + ": " + path_get_text(current_path), {keepWords:true});
+  term.echo("Page " + get_path_id(game));
+  term.echo(path_get_text(current_path), {keepWords:true});
   term.echo("\nOptions:");
   for (var n = 0; n < path_get_option_len(current_path); n++) {
     term.echo((n + 1) + ": " + path_get_option(current_path, n).text);
   }
-  term.echo("What do you do?", {keepWords:true})
+  //term.echo("What do you do?", {keepWords:true})
 }
 
 run();
