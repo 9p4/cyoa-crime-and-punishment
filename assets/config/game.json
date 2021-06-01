@@ -4,7 +4,7 @@
   "slug": "What would you do if you were Raskolnikov?",
   "paths": {
     "0": {
-      "text": "On an exceptionally hot evening early in July, you come out of the garret in which you lodge in S. Place and walk slowly, as though in hesitation, toward K. bridge.\nYou have successfully avoided meeting your landlady on the staircase. Your garret is under the roof of a high, five-storied house and is more like a cupboard than a room. The landlady who provides you with garret, dinners, and attendance, lives on the floor below, and every time you go out you are obliged to pass her kitchen, the door of which invariably stood open. And each time you pass, you have a sick, frightened feeling, which makes you scowl and feel ashamed. You are hopelessly in debt to your landlady, and are afraid of meeting her.\n\n[[@;;;;./assets/img/0.jpg]]",
+      "text": "On an exceptionally hot evening early in July, you come out of the garret in which you lodge in S. Place and walk slowly, as though in hesitation, toward K. bridge.\n\nYou have successfully avoided meeting your landlady on the staircase. Your garret is under the roof of a high, five-storied house and is more like a cupboard than a room. The landlady who provides you with garret, dinners, and attendance, lives on the floor below, and every time you go out you are obliged to pass her kitchen, the door of which invariably stood open. And each time you pass, you have a sick, frightened feeling, which makes you scowl and feel ashamed. You are hopelessly in debt to your landlady, and are afraid of meeting her.\n\n[[@;;;;./assets/img/0.jpg]]",
       "options": [
         {
           "jump": 1,
@@ -49,7 +49,7 @@
       ]
     },
     "5": {
-      "text": "You hear someone say something, breaking you out of the stupor.\n\"Hey there, German hatter!\"\nHorror overcomes you.",
+      "text": "You hear someone say something, breaking you out of the stupor.\n\n\"Hey there, German hatter!\"\n\nHorror overcomes you.",
       "options": [
         {
           "jump": 6,
@@ -94,10 +94,135 @@
       ]
     },
     "10": {
-      "text": "\"Raskolnikov, a student, I came here a month ago,\" the you make haste to mutter, with a half bow, remembering that you ought to be more polite. \"I remember, my good sir, I remember quite well your coming here,\" the old woman said distinctly, still keeping her inquiring eyes on his face.\n\"And here... I am again on the same errand\". The old woman paused, as though hesitating; then stepped on one side, and pointing to the door of the room, she said, letting her visitor pass in front of her.",
+      "text": "\"Raskolnikov, a student, I came here a month ago,\" the you make haste to mutter, with a half bow, remembering that you ought to be more polite. \"I remember, my good sir, I remember quite well your coming here,\" the old woman said distinctly, still keeping her inquiring eyes on his face.\n\n\"And here... I am again on the same errand\". The old woman paused, as though hesitating; then stepped on one side, and pointing to the door of the room, she said, letting you pass in front of her.",
       "options": [
         {
-          "jump": 7,
+          "jump": 11,
+          "text": "Press enter to continue"
+        }
+      ]
+    },
+    "11": {
+      "text": "The little room into which the you walked, with yellow paper on the walls, geraniums and muslin curtains in the windows, was brightly lit up at that moment by the setting sun. There was nothing special in the room. The furniture, all very old and of yellow wood, consisted of a sofa with a huge bent wooden back, an oval table in front of the sofa, a dressing-table with a looking-glass fixed on it between the windows, chairs along the walls and two or three half-penny prints in yellow frames, representing German damsels with birds in their hands-that was all. In the corner a light was burning before a small picture. Everything was very clean; the floor and the furniture were brightly polished; everything shone.",
+      "options": [
+        {
+          "jump": 12,
+          "text": "Press enter to continue"
+        }
+      ]
+    },
+    "12": {
+      "text": "\"I've brought something to pawn here,\" you say. You draw out an old-fashioned flat silver watch, on the back of which was engraved a globe. \"Give me four roubles for this, I shall redeem it, it was my father's. I shall be getting some money soon\"\n\n\"A rouble and a half, and interest in advance, if you like!\"\n\n\"A rouble and a half?!\" You're furious. You remember that there's nothing else you can do, and you have something else incoming...",
+      "options": [
+        {
+          "jump": 13,
+          "text": "Accept the rouble-and-a-half"
+        }
+      ]
+    },
+    "13": {
+      "text": "\"Hand it over,\" you say roughly. The old woman fumbles in her pocket for her keys, and disappears behind the curtain into the other room. You are left standing alone in the middle of the room, listening. You can hear her unlocking the chest of drawers.",
+      "options": [
+        {
+          "jump": 14,
+          "text": "Reflect on the noises"
+        }
+      ]
+    },
+    "14": {
+      "text": "\"It must be the top drawer,\" you think. \"So she carries the keys in a pocket on the right. All in one bunch on a steel ring.... And there's one key there, three times as big as all the others, with deep notches; that can't be the key of the chest of drawers... then there must be some other chest or strong-box... that's worth knowing. Strong-boxes always have keys like that... but how degrading it all is.\"",
+      "options": [
+        {
+          "jump": 15,
+          "text": "Press enter to continue"
+        }
+      ]
+    },
+    "15": {
+      "text": "The old woman comes back.\n\n\"Here, sir: as we say ten copecks the rouble a month, so I must take fifteen copecks from a rouble and a half for the month in advance. But for the two roubles I lent you before, you owe me now twenty copecks on the same reckoning in advance. That makes thirty-five copecks altogether. So I must give you a rouble and fifteen copecks for the watch. Here it is.\"\n\nYou don't dispute it and take the money. There is something you still want to ask.",
+      "options": [
+        {
+          "jump": 16,
+          "text": "Keep up a conversation"
+        }
+      ]
+    },
+    "16": {
+      "text": "\"I may be bringing you something else in a day or two, a valuable thing———silver———a cigarette-box, as soon as I get it back from a friend...\"\n\n\"Well, we will talk about it then, sir.\"\n\n\"Good-bye. Are you always at home alone, your sister is not here with you?\" You ask her as casually as possible as you go out into the passage.\n\n\"...What business is she of yours, my good sir?\"\n\n\"Oh, nothing particular, I simply asked. You are too quick... Good-day.\"",
+      "options": [
+        {
+          "jump": 17,
+          "text": "Quickly leave"
+        }
+      ]
+    },
+    "17": {
+      "text": "You leave in complete confusion. The confusion becomes more and more intense. As you descend the stairs, you stop short, two, sometimes three times as if you were suddenly struck with some thought.\n\n\"Oh, God, how loathsome it all is! and can I, can I possibly.... No, it's nonsense, it's rubbish!\"\n\n\"And how could such an atrocious thing come into my head? What filthy things my heart is capable of. Yes, filthy above all, disgusting, loathsome, loathsome!———and for a whole month I've been....\"",
+      "options": [
+        {
+          "jump": 18,
+          "text": "[[;white;]Wallow in self hatred]"
+        }
+      ]
+    },
+    "18": {
+      "text": "No words, no exclamations, can express agitation agitation. The feeling of intense [[i;white;]repulsion], which had begun to oppress and torture his heart while you were on the way to the old woman, has by now reached such a pitch and has taken such a definite form that you don't know what to do with yourself to escape from your own wretchedness.",
+      "options": [
+        {
+          "jump": 19,
+          "text": "[[;red;]Dissolute, shuddering, ineffable, already a part of it]"
+        }
+      ]
+    },
+    "19": {
+      "text": "Thankfully, a man jostles you out of your spell.\n\nLooking round, you notice that you were standing close to a tavern with steps leading from the pavement to the basement. At that instant, two drunken men came out at the door, and abusing and supporting one another, they mount the steps.",
+      "options": [
+        {
+          "jump": 20,
+          "text": "So [[i;;]thirsty]"
+        }
+      ]
+    },
+    "20": {
+      "text": "Without stopping to think, you go down the steps.\n\nTill that moment you have never been into a tavern, but now you felt giddy and were tormented by a burning thirst. You long for a drink of cold beer, and attribute your sudden weakness to the want of food.",
+      "options": [
+        {
+          "jump": 21,
+          "text": "Drink away the [[;white;]thoughts]"
+        }
+      ]
+    },
+    "21": {
+      "text": "You sit down at a sticky little table in a dark and dirty corner; order some beer, and eagerly drink off the first glassful. At once you felt easier and your thoughts became clear.",
+      "options": [
+        {
+          "jump": 22,
+          "text": "Press enter to continue"
+        }
+      ]
+    },
+    "22": {
+      "text": "\"That's all nonsense,\" you claim hopefully, \"and there is nothing in it all to worry about! It's simply physical derangement. Just a glass of beer, a piece of dry bread, and in one moment the brain is stronger, the mind is clearer and the will is firm! Phew, how utterly petty it all is!\"",
+      "options": [
+        {
+          "jump": 23,
+          "text": "Press enter to continue"
+        }
+      ]
+    },
+    "23": {
+      "text": "You are by now looking cheerful as though you were suddenly set free from a terrible burden: and you gaze round in a friendly way at the people in the room. But at that moment you have a dim foreboding that this happier frame of mind was also not normal.",
+      "options": [
+        {
+          "jump": 24,
+          "text": "Press enter to continue"
+        }
+      ]
+    },    "24": {
+      "text": "The people still in the tavern were a man who appeared to be an artisan, drunk, but not extremely so, sitting before a pot of beer, and his companion, a huge, stout man with a grey beard, in a short full-skirted coat. He was very drunk: and had dropped asleep on the bench; every now and then, he began as though in his sleep, cracking his fingers, with his arms wide apart and the upper part of his body bounding about on the bench, while he hummed some meaningless refrain, trying to recall some such lines.\n\nBut no one shared his enjoyment: his silent companion looked with positive hostility and mistrust at all these manifestations. There was another man in the room who looked somewhat like a retired government clerk. He was sitting apart, now and then sipping from his pot and looking round at the company. He, too, appeared to be in some agitation.\n\n[[@;;;;./assets/img/24.jpg]]",
+      "options": [
+        {
+          "jump": 25,
           "text": "Press enter to continue"
         }
       ]
